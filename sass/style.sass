@@ -1,0 +1,29 @@
+@import 'normolize'
+@import 'elements'
+@import 'header'
+
+.main
+    background-color: #414175
+    overflow: hidden
+    background-image: url('../img/trees.svg')
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: 95% auto 
+    .container
+        min-height: 90vh
+        // height: 732px
+        padding: 0 0 80px
+
+    &::after
+        content: ''
+        display: block
+        width: 100%
+        height: 5.3vw
+        background-color: red
+        background-image: url('../img/wrap.jpg')
+        background-repeat: no-repeat
+        background-size: 100% auto 
+        background-position: center bottom
+
+    &__img
+        margin: auto

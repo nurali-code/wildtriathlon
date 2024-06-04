@@ -1,0 +1,79 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    border: none
+    outline: none
+
+$prime: #BF4C0C
+$second: #000
+
+html
+    scroll-behavior: smooth
+
+body
+    min-height: 100vh
+    color: #1A262D
+    background-color: #FFFFFF
+    font-family: 'Proxima Nova', sans-serif
+    display: flex
+    flex-direction: column
+
+// .container
+//     width: 100%
+//     margin: 0 auto 
+//     max-width: 1350px
+//     padding: 0 15px
+
+img
+    max-width: 100%
+
+a,
+button
+    display: inline-block
+    text-decoration: none
+    transition: all ease .2s
+    background-color: transparent
+    &:active
+        transform: scale(.98)
+
+    img
+        display: block
+
+strong
+    font-weight: 600
+
+mark
+    background-color: $prime
+    color: #000
+    display: inline-block
+    padding: 2px 8px 4px
+
+.btn
+    font-size: 24px
+    line-height: 30.43px
+    font-weight: 600
+
+    display: block
+    border-radius: 10px
+    color: #000
+    background-color: $prime
+    padding: 25px
+    position: relative
+    z-index: 1
+    overflow: hidden
+    transition: .3s ease all
+    
+
+.fx, .fxb, .fxc
+    display: flex
+    align-items: center
+
+.fxc 
+    flex-direction: column
+.fxb
+    justify-content: space-between
+
+.lang
+    &-content
+        display: none

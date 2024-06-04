@@ -1,0 +1,215 @@
+@font-face {
+	font-family: 'Tomarik';
+	src: local('Tomarik Brush'), local('Tomarik-Brush'),
+		url('Tomarik-Brush.woff2') format('woff2'),
+		url('Tomarik-Brush.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Cn';
+	src: url('ProximaNovaCond-Light.eot');
+	src: local('Proxima Nova Condensed Light'), local('ProximaNovaCond-Light'),
+		url('ProximaNovaCond-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('ProximaNova-Light.eot');
+	src: local('Proxima Nova Light'), local('ProximaNova-Light'),
+		url('ProximaNova-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Cn';
+	src: url('ProximaNovaCond-Regular.eot');
+	src: local('Proxima Nova Condensed Regular'), local('ProximaNovaCond-Regular'),
+		url('ProximaNovaCond-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('ProximaNova-Extrabld.eot');
+	src: local('Proxima Nova Extrabold'), local('ProximaNova-Extrabld'),
+		url('ProximaNova-Extrabld.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Cn';
+	src: url('ProximaNovaCond-Black.eot');
+	src: local('Proxima Nova Condensed Black'), local('ProximaNovaCond-Black'),
+		url('ProximaNovaCond-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Cn';
+	src: url('ProximaNovaCond-Regular.eot');
+	src: local('Proxima Nova Condensed Regular'), local('ProximaNovaCond-Regular'),
+		url('ProximaNovaCond-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('ProximaNova-Regular.eot');
+	src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
+		url('ProximaNova-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('ProximaNova-Semibold.eot');
+	src: local('Proxima Nova Semibold'), local('ProximaNova-Semibold'),
+		url('ProximaNova-Semibold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova ExCn';
+	src: url('ProximaNovaExCn-Thin.eot');
+	src: local('Proxima Nova Extra Condensed Thin'), local('ProximaNovaExCn-Thin'),
+		url('ProximaNovaExCn-Thin.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Cn';
+	src: url('ProximaNovaCond-Semibold.eot');
+	src: local('Proxima Nova Condensed Semibold'), local('ProximaNovaCond-Semibold'),
+		url('ProximaNovaCond-Semibold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova ExCn';
+	src: url('ProximaNovaExCn-Semibold.eot');
+	src: local('Proxima Nova Extra Condensed Semibold'), local('ProximaNovaExCn-Semibold'),
+		url('ProximaNovaExCn-Semibold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('ProximaNova-Thin.eot');
+	src: local('Proxima Nova Thin'), local('ProximaNova-Thin'),
+		url('ProximaNova-Thin.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Cn';
+	src: url('ProximaNovaCond-Thin.eot');
+	src: local('Proxima Nova Condensed Thin'), local('ProximaNovaCond-Thin'),
+		url('ProximaNovaCond-Thin.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova ExCn';
+	src: url('ProximaNovaExCn-Light.eot');
+	src: local('Proxima Nova Extra Condensed Light'), local('ProximaNovaExCn-Light'),
+		url('ProximaNovaExCn-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova ExCn';
+	src: url('ProximaNovaExCn-Extrabld.eot');
+	src: local('Proxima Nova Extra Condensed Extrabold'), local('ProximaNovaExCn-Extrabld'),
+		url('ProximaNovaExCn-Extrabld.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('ProximaNova-Black.eot');
+	src: local('Proxima Nova Black'), local('ProximaNova-Black'),
+		url('ProximaNova-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('ProximaNova-Bold.eot');
+	src: local('Proxima Nova Bold'), local('ProximaNova-Bold'),
+		url('ProximaNova-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova ExCn';
+	src: url('ProximaNovaExCn-Bold.eot');
+	src: local('Proxima Nova Extra Condensed Bold'), local('ProximaNovaExCn-Bold'),
+		url('ProximaNovaExCn-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('ProximaNovaT-Thin.eot');
+	src: local('Proxima Nova Thin'), local('ProximaNovaT-Thin'),
+		url('ProximaNovaT-Thin.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Cn';
+	src: url('ProximaNovaCond-Bold.eot');
+	src: local('Proxima Nova Condensed Bold'), local('ProximaNovaCond-Bold'),
+		url('ProximaNovaCond-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova ExCn';
+	src: url('ProximaNovaExCn-Black.eot');
+	src: local('Proxima Nova Extra Condensed Black'), local('ProximaNovaExCn-Black'),
+		url('ProximaNovaExCn-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova ExCn';
+	src: url('ProximaNovaExCn-Regular.eot');
+	src: local('Proxima Nova Extra Condensed Regular'), local('ProximaNovaExCn-Regular'),
+		url('ProximaNovaExCn-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('ProximaNova-Light.eot');
+	src: local('Proxima Nova Light'), local('ProximaNova-Light'),
+		url('ProximaNova-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
