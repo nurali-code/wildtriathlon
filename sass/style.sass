@@ -9,9 +9,9 @@
     background-repeat: no-repeat
     background-position: center center
     background-size: 95% auto
+    margin-bottom: 40px
     .container
         min-height: 90vh
-        // height: 732px
         padding: 0 0 80px
 
     &::after
@@ -19,7 +19,6 @@
         display: block
         width: 100%
         height: 5.3vw
-        background-color: red
         background-image: url('../img/wrap.jpg')
         background-repeat: no-repeat
         background-size: 100% auto
@@ -29,7 +28,6 @@
         margin: auto
 
 .trainings
-    padding: 80px 0
     &__subheading
         font-weight: 600
         font-size: 36px
@@ -42,7 +40,7 @@
         font-weight: 400
         margin: 0 0 24px
 
-    &__text 
+    &__text
         margin: 0
         font-size: 18px
         line-height: 27px
@@ -55,7 +53,7 @@
         background-color: #F5F4F3
         padding: 48px 0px
         gap: 64px
-        
+
     &-item
         text-align: center
         margin: 0
@@ -74,3 +72,151 @@
             font-size: 40px
             line-height: 36px
             color: $prime
+
+.competitions
+    padding-bottom: 0
+    &::after
+        content: ''
+        display: block
+        width: 100%
+        height: 5.3vw
+        background-image: url('../img/wrap.jpg')
+        background-repeat: no-repeat
+        background-size: 100% auto
+        background-position: center bottom
+        transform: scaleY(-1)
+        margin-top: 40px
+
+    &-title
+        text-align: center
+        margin-bottom: 8px
+
+    .item
+        margin-bottom: 24px
+        &__tag
+            background-color: $blue
+            color: white
+            display: inline-block
+            padding: 3px 8px
+            border-radius: 2px
+            font-size: 14px
+            line-height: 19.6px
+            position: absolute
+            top: 16px
+            left: 16px
+            z-index: 1111
+
+        &-img
+            position: relative
+            z-index: 1
+
+        &__img
+            display: block
+            margin: 0 0 16px
+            border-radius: 4px
+
+        &__text
+            font-size: 16px
+            line-height: 24px
+            margin: 0 0 16px
+
+        &-list
+            list-style: none
+            &_2
+                padding: 0 0 0 22px
+
+            li
+                display: flex
+                align-items: center
+                justify-content: space-between
+                margin-bottom: 20px
+                background-repeat: no-repeat
+                background-image: url('../img/lines.svg')
+                background-position: center center
+                &:last-of-type
+                    margin-bottom: 0
+
+            &__img
+                display: block
+                margin: 0
+                background-color: #fff
+
+            &__text
+                background-color: #fff
+                padding: 0 0 0 8px
+                min-width: 60px
+                display: inline-block
+                font-size: 14px
+                line-height: 150%
+
+.schedule
+    background-color: $blue
+    color: white
+    &__text
+        text-align: center
+        max-width: 871px
+        margin: 0 auto 40px
+        font-size: 18px
+        line-height: 27px
+        font-weight: 400
+    .item
+        margin: 0 auto
+        max-width: 649px
+        gap: 24px
+        --title-w: 14%
+        position: relative
+        z-index: 1
+        margin-bottom: 24px
+        &::before
+            content: ''
+            display: block
+            width: 2px
+            height: calc( 100% - 48px )
+            background-image: url('../img/line_down.svg')
+            background-repeat: no-repeat
+            background-position: center bottom
+            position: absolute
+            bottom: 0
+            right: calc( 100% - var(--title-w) - 24px - 24px - 32px + 39px )
+        &-title
+            font-size: 14px
+            width: var(--title-w)
+            margin: 0
+            span
+                display: block
+
+        &__head
+            font-weight: 700
+            color: $prime
+            margin: 0 0 4px
+
+        &__heading
+            font-size: 18px
+            font-weight: 700
+            line-height: 27px
+
+        &__text
+            font-size: 14px
+            line-height: 21px
+
+        &-box
+            width: calc( 100% - var(--title-w) - 24px - 24px - 32px )
+            background-color: #fff
+            padding: 16px
+            color: #000
+            border-radius: 4px
+            position: relative
+            z-index: 1
+            &::before
+                content: ''
+                pointer-events: none
+                display: block
+                position: absolute
+                top: 8px
+                left: -7px
+                width: 0px
+                height: 0px
+                border-style: solid
+                border-width: 5.5px 9.5px 5.5px 0
+                border-color: transparent #FFFFFF transparent transparent
+                transform: rotate(0deg)
