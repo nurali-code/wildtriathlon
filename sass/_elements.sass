@@ -6,6 +6,7 @@
     outline: none
 
 $prime: #BF4C0C
+$blue: #414175
 $second: #000
 
 html
@@ -19,11 +20,31 @@ body
     display: flex
     flex-direction: column
 
-// .container
-//     width: 100%
-//     margin: 0 auto 
-//     max-width: 1350px
-//     padding: 0 15px
+.h1,.h2,.h3,.h4,.h5
+    margin: 0
+    font-family: 'Tomarik', sans-serif
+    font-weight: normal
+
+.headline
+    font-family: 'Tomarik', sans-serif
+    font-weight: 400
+    font-size: 54px
+    line-height: 60px
+    margin: 0 0 8px
+    color: $prime
+
+.textline
+    font-weight: 600
+    font-size: 34px
+    line-height: 44px
+    margin: 0 0 16px
+
+
+
+.h2 
+    font-size: 52px
+    line-height: 58px
+    margin: 0 0 34px
 
 img
     max-width: 100%
@@ -51,25 +72,24 @@ mark
 
 .btn
     font-size: 24px
-    line-height: 30.43px
-    font-weight: 600
+    line-height: 24px
+    text-align: center
 
     display: block
-    border-radius: 10px
-    color: #000
-    background-color: $prime
-    padding: 25px
-    position: relative
-    z-index: 1
-    overflow: hidden
-    transition: .3s ease all
-    
+    width: fit-content
+    border-radius: 4px
+    color: $blue
+    padding: 16px 75px
+    border: 2px solid var(--background_blue, #414175)
+    &:hover
+        background: $blue 
+        color: white
 
 .fx, .fxb, .fxc
     display: flex
     align-items: center
 
-.fxc 
+.fxc
     flex-direction: column
 .fxb
     justify-content: space-between
