@@ -39,9 +39,7 @@ body
     line-height: 44px
     margin: 0 0 16px
 
-
-
-.h2 
+.h2
     font-size: 52px
     line-height: 58px
     margin: 0 0 34px
@@ -85,8 +83,20 @@ mark
     padding: 16px 75px
     border: 2px solid var(--background_blue, #414175)
     &:hover
-        background: $blue 
+        background: $blue
         color: white
+
+    &__2
+        font-weight: 700 
+        font-size: 16px
+        padding: 6px 31px
+        color: white
+        background-color: $prime
+        border-color: rgba(0, 0, 0, 0)
+        &:hover
+            color: $prime
+            border-color: $prime
+            background-color: rgba(0, 0, 0, 0)
 
 .fx, .fxb, .fxc
     display: flex
@@ -101,5 +111,5 @@ mark
     &-content
         display: none
 
-section 
+section
     padding: 40px 0

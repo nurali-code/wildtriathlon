@@ -1,13 +1,72 @@
-footer 
-   background-color: $prime 
-   text-align: center
-   padding: 11px
-   // margin-top: auto 
-   img 
-      margin: 0 auto 
-      display: block
+.footer
+   background-color: $blue
+   padding: 48px 0
+   color: white
+   &__heading
+      font-size: 28px
+      line-height: 32px
+      font-weight: 400
+      margin: 0 0 8px
 
-   @media screen and ( max-width: 700px )
-      img 
-         max-width: 122px
-      
+   .logo 
+      max-width: 252px
+
+   &-col 
+
+      margin: 0 auto
+      &:last-child,
+      &:first-child
+         margin-left: 0
+         
+
+   &__text 
+      font-size: 22px
+      line-height: 26px
+      margin: 0 0 16px
+
+   &__subheading
+      font-size: 18px
+      line-height: 150%
+      font-weight: bold
+      margin: 0 0 8px
+
+   &__link
+      color: white
+      display: block
+      font-size: 14px
+      line-height: 150%
+      margin: 0 0 4px
+      &:last-of-type
+         margin-bottom: 0
+
+   a
+      &:hover
+         color: $prime
+         text-decoration: underline
+
+   &-soc
+      gap: 10px
+
+   &-meddle
+      margin: 48px 0
+      padding: 48px 0
+      border-top: 1px solid #F5F4F3
+      border-bottom: 1px solid #F5F4F3
+      gap: 48px
+
+   &-under
+      gap: 8px 
+      * 
+         margin: 0
+   &-form
+      gap: 8px
+
+   input
+      font-size: 12px
+      font-weight: 400
+      line-height: 17px
+      border-radius: 4px
+      height: 40px
+      width: 100%
+      padding: 0 16px
+
