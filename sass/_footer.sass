@@ -1,6 +1,7 @@
 .footer
    background-color: $blue
    padding: 48px 0
+   margin-top: 80px
    color: white
    &__heading
       font-size: 28px
@@ -8,18 +9,17 @@
       font-weight: 400
       margin: 0 0 8px
 
-   .logo 
+   .logo
       max-width: 252px
 
-   &-col 
+   &-col
 
       margin: 0 auto
       &:last-child,
       &:first-child
          margin-left: 0
-         
 
-   &__text 
+   &__text
       font-size: 22px
       line-height: 26px
       margin: 0 0 16px
@@ -55,8 +55,8 @@
       gap: 48px
 
    &-under
-      gap: 8px 
-      * 
+      gap: 8px
+      *
          margin: 0
    &-form
       gap: 8px
@@ -70,3 +70,35 @@
       width: 100%
       padding: 0 16px
 
+   @media screen and ( max-width: 991px )
+      margin-top: 48px
+      .logo
+         max-width: 217px
+
+      &__headling
+         font-size: 22px
+
+      &__text
+         font-size: 18px
+         line-height: 24px
+
+      &-meddle
+         flex-wrap: wrap
+         justify-content: flex-start
+
+      &-col
+         margin: 0
+
+      &-under 
+         justify-content: center !important
+         margin-top: 20px
+
+   @media screen and ( max-width: 700px )
+      .logo
+         margin: 0 auto 40px
+         display: block
+         max-width: 110px
+
+      &__headling
+         font-size: 22px
+         line-height: 24px

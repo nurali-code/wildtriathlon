@@ -12,43 +12,43 @@
             padding: 8px
             position: relative
             z-index: 1
-            &::after
-                content: '|'
-                display: inline-block
-                margin: 0 0 0 16px
-                color: white
-
-            &::before
-                content: ''
-                display: block
-                width: calc( 100% - 24px )
-                border: 2px solid $prime
-                border-radius: 1px
-                position: absolute
-                left: 0
-                bottom: 0
-                opacity: 0
-                transition: all ease .3s
-
-            &:first-of-type
-                padding-left: 0
-                &::before
-                    width: calc( 100% - 32px )
-
-            &:last-of-type
+            @media screen and ( min-width: 991px )
                 &::after
-                    display: none
+                    content: '|'
+                    display: inline-block
+                    margin: 0 0 0 16px
+                    color: white
 
                 &::before
-                    padding-right: 8px
-                    width: calc( 100% - 16px )
+                    content: ''
+                    display: block
+                    width: calc( 100% - 24px )
+                    border: 2px solid $prime
+                    border-radius: 1px
+                    position: absolute
+                    left: 0
+                    bottom: 0
+                    opacity: 0
+                    transition: all ease .3s
 
+                &:first-of-type
+                    padding-left: 0
+                    &::before
+                        width: calc( 100% - 32px )
 
-            &.is__active,
-            &:hover
-                color: $prime
-                &::before
-                    opacity: 1
+                &:last-of-type
+                    &::after
+                        display: none
+
+                    &::before
+                        padding-right: 8px
+                        width: calc( 100% - 16px )
+
+                &.is__active,
+                &:hover
+                    color: $prime
+                    &::before
+                        opacity: 1
 
     .lang
         margin-left: auto
@@ -63,3 +63,88 @@
     .btn
         &__menu
             display: none
+
+    @media screen and ( max-width: 991px )
+        .container
+
+        .btn
+
+            &__menu
+                z-index: 9999
+                display: inline-block
+                position: relative
+                width: 40px
+                height: 40px
+                margin: 0
+                span
+                    position: absolute
+                    top: 50%
+                    left: 0
+                    margin-top: -1px
+                    display: block
+                    width: 70%
+                    height: 2px
+                    transition: all ease .2s
+                    border-radius: 2px
+                    background-color: #fff
+                    &::before,
+                    &::after
+                        content: ''
+                        display: block
+                        width: 120%
+                        height: 2px
+                        background-color: #fff
+                        position: absolute
+                        top: 12px
+                        left: 0
+                        transition: all ease .3s
+                        border-radius: 2px
+                    &::after
+                        top: -12px
+                        left: 0
+
+                &.is__active
+                    span
+                        top: 55%
+                        left: 50%
+                        transform: translate(-50%, -50%) rotate(-45deg)
+                        &::before
+                            background-color: transparent
+                            width: 100%
+                        &::after
+                            width: 100%
+                            top: 50%
+                            width: 100%
+                            left: 50%
+                            transform: translate(-50%, -50%) rotate(-90deg)
+
+        .nav
+            position: fixed
+            top: 0
+            left: 0
+            width: 100vw
+            height: 100%
+            left: 50%
+            background-color: $blue
+            flex-direction: column
+            justify-content: center
+            padding-bottom: 100px
+            transform-origin: 50% 0
+            opacity: 0
+            visibility: hidden
+            transform: translate(-50%, -100%)
+            transition: all ease .7s
+            &__link
+                padding: 4px
+                font-size: 24px
+                line-height: 150%
+
+            &.is__active
+                opacity: 1
+                visibility: visible
+                transform: translate(-50%, 0)
+
+        .lang
+            margin: 24px auto 0
+
+    
