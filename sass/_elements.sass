@@ -19,6 +19,9 @@ body
     font-family: 'Proxima Nova', sans-serif
     display: flex
     flex-direction: column
+    @media screen and ( max-width: 991px )
+        &.is__active
+            overflow: hidden
 
 .h1,.h2,.h3,.h4,.h5
     margin: 0

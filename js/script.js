@@ -3,12 +3,6 @@ $('.btn__menu, .nav__link').on('click', function () {
     $('.nav, .btn__menu, body').toggleClass('is__active');
   }
 })
-$('.lang__btn').on('click', function () {
-  // $('.lang-content').toggleClass('is__active');
-  $(this).parent().toggleClass('is__active');
-
-})
-
 $('.competitions-slider').slick({
   dots: false,
   infinite: false,
@@ -19,11 +13,8 @@ $('.competitions-slider').slick({
   variableWidth: true,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1000,
       settings: "unslick",
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
 });
